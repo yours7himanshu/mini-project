@@ -18,7 +18,7 @@ html,body{
     position:relative;
     width: 100%;
     padding: 0 1vw;
-    padding-top: 19vh;
+    padding-top: 20vh;
 
 }
 #page1 h1{
@@ -29,8 +29,8 @@ html,body{
     letter-spacing: -8px;
 }
 #video-container{
-    height: 100vw;
-    width: 100%;
+    height: 100vh;
+   width: 100%;
     margin-top: 1vw;
     position: relative;
 }
@@ -61,12 +61,79 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vw;
+    padding: 2vw 3vw;
 
 }
 
 #page2 .card{
     height: 100%;
-    width: 30%;
-    background-color: gray;
+    width: 31%;
+    overflow:hidden;
+}
+#page2 .card img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 5px;
+    scale:1.1;
+}
+@media(max-width :900px){
+    #page1{
+      
+       min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+    
+    }
+    #page1 h1{
+        line-height: 14vw;
+        font-size: 14vw;
+        letter-spacing: -5px;
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+  
+    }
+    #video-container video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      
+    }
+    #video-container #play{
+       display:none;
+    
+    }
+
+#page2{
+   height:100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    /* padding: 5vw 3vw; */
+    background-color: red;
+
+}
+
+#page2 .card{
+   height: 100vh;
+    width:100%; 
+overflow:hidden;
+
+    
+}
+#page2 .card img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    scale:1.1;
+
+}
+
 }
